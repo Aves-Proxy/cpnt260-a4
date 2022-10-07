@@ -1,0 +1,101 @@
+/* 0 out margins & padding, setup border box */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body font and styling */
+body {
+  text-align: center;
+  font-family: 'Oswald', Impact, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  background: #000;
+  color: #F0F0C9;
+}
+
+/* flexbox and padding set on wrappers*/
+div {
+  display: flex;
+  padding: 1rem;
+}
+
+/* nav bar flexbox and sizing */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+/* nav branding styling */
+.nav-branding {
+  padding: 0.5rem;
+  font-size: 24px;
+  color: #F0F0C9;
+}
+
+/* nav menu flexbox for positioning*/
+.navmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* hover state for clickability */
+.navmenu a:hover {
+  color: #F2BB05;
+}
+
+/* remove list bullets and add margin */
+li {
+  margin: 0 1rem;
+  list-style: none;
+}
+
+/* remove anchor underline & color them white */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* 90% viewport height hero section, is a flex container that centers children */
+.hero {
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)), url(../images/pexels-tima-miroshnichenko-7991158.jpg); /*background image, linear gradient to darken it so it fades into background better*/
+  background-position: center center; /*centers background image*/
+}
+
+/* 40ch width constraint on  hero content */
+.title, .catchphrase, .cta {
+  max-width: 40ch;
+}
+
+/* makes title big */
+.title {
+  margin-top: 6rem;
+  font-size: 90px;
+}
+
+/* catchphrase styling */
+.catchphrase {
+  margin-top: 1rem;
+  color: #fff;
+}
+
+/* subscribe button styling */
+.cta {
+  margin-top: 4rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 24px;
+  background-color: #F2BB05;
+  color: #000;
+}
+
+.cta:hover {
+  background-color: #F0F0C9;
+}
